@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            position: relative;
+        }
+
+        /* Menu Container */
+        .menu-container {
+            position: relative;
+        }
+
+        .menu-bar {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%; /* Ensures the dropdown appears directly below the menu */
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            list-style: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            min-width: 200px;
+        }
+
+        .dropdown li {
+            margin: 8px 0;
+            text-align: left;
+        }
+
+        .dropdown li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .dropdown li a:hover {
+            background: #ff9800;
+            color: #000;
+        }
+
+        /* Keep dropdown visible when hovering over parent or dropdown */
+        .menu-container:hover .dropdown {
+            display: block;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar input {
+            border: none;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+
+        .main-title {
+            margin-top: 50px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .sub-title {
+            font-size: 18px;
+            margin: 10px 0 20px 0;
+        }
+
+        .popular-places {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .place-card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            width: 300px;
+        }
+
+        .place-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .place-card h3 {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .place-card:hover {
+            transform: scale(1.05);
+        }
+
+        .stars {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <!-- Menu Container with Dropdown -->
+            <div class="menu-container">
+                <div class="menu-bar">☰ Destinations</div>
+                <ul class="dropdown">
+                    <li><a href="#">Best Beaches in the World</a></li>
+                    <li><a href="#">Top Mountain Destinations</a></li>
+                    <li><a href="#">Hidden Gems in Europe</a></li>
+                    <li><a href="#">Adventures in Africa</a></li>
+                    <li><a href="#">Cultural Tours in Asia</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Navigation Links -->
+            <div class="navbar-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Explore</a>
+                <a href="#">Activity</a>
+            </div>
+
+            <!-- Right Search Input -->
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="main-title">Explore Beyond Boundaries,<br>Travel Beyond Expectations</div>
+        <div class="sub-title">We don't just plan trips, we craft unforgettable adventures.</div>
+
+        <h2>Popular Places</h2>
+        <div class="popular-places">
+            <div class="place-card">
+                <img src="OIP.jpg" alt="Beach">
+                <h3>Beach</h3>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="place-card">
+                <img src="OIP%20(1).jpg" alt="Mountain">
+                <h3>Mount</h3>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="place-card">
+                <img src="1462367-paris-at-night-wallpaper-2880x1800-for-samsung-galaxy.jpg" alt="Country">
+                <h3>Country</h3>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
