@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Now - Travel Explorer</title>
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;    /* Center vertically */
+            height: 100vh;          /* Full viewport height */
+            background: url('explore now.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            flex-direction: column;  /* Stack content vertically */
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Explore Container Styling */
+        .explore-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 80px; /* Offset for fixed navbar */
+        }
+
+        .explore-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .explore-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .explore-card h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #ffcc00;
+        }
+
+        .explore-card p {
+            padding: 0 10px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .explore-card a {
+            display: inline-block;
+            background: #ffcc00;
+            color: black;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: background 0.3s;
+        }
+
+        .explore-card a:hover {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Travel Explorer</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="explore.html">Explore</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <!-- Explore Content -->
+    <div class="explore-container">
+        <!-- Destination Card 1 -->
+        <div class="explore-card">
+            <img src="beach.jpg" alt="Beach">
+            <h3>Serene Beaches</h3>
+            <p>Relax and rejuvenate by exploring some of the world's most stunning beach destinations.</p>
+            <a href="beach.html">Explore More</a>
+        </div>
+
+        <!-- Destination Card 2 -->
+        <div class="explore-card">
+            <img src="mountain.jpg" alt="Mountains">
+            <h3>Majestic Mountains</h3>
+            <p>Discover breathtaking mountain landscapes and thrilling adventures.</p>
+            <a href="mountain.html">Explore More</a>
+        </div>
+
+        <!-- Destination Card 3 -->
+        <div class="explore-card">
+            <img src="city.jpg" alt="Cities">
+            <h3>Vibrant Cities</h3>
+            <p>Experience the culture, nightlife, and attractions of iconic cities around the world.</p>
+            <a href="city.html">Explore More</a>
+        </div>
+
+        <!-- Destination Card 4 -->
+        <div class="explore-card">
+            <img src="forest.jpg" alt="Forests">
+            <h3>Enchanting Forests</h3>
+            <p>Reconnect with nature in lush green forests and serene woodlands.</p>
+            <a href="forest.html">Explore More</a>
+        </div>
+    </div>
+</body>
+</html>
