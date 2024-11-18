@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Travel Explorer</title>
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('about%20us.jpg') no-repeat fixed center;
+            background-size: cover;
+            color: white;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        /* About Container Styling */
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Align content to the right */
+            height: 100vh;
+            text-align: left;
+            padding-right: 50px; /* Add spacing from the right edge */
+            background-color: rgba(0, 0, 0, 0.6); /* Add semi-transparent overlay */
+            margin-top: 60px; /* Offset for the fixed navbar */
+        }
+
+        .about-text {
+            max-width: 400px; /* Limit the text width */
+        }
+
+        .about-text h1 {
+            font-size: 60px;
+            background: rgba(2, 129, 116, 0.8); /* Add transparency */
+            padding: 15px 30px;
+            display: inline-block;
+            border-radius: 15px;
+            margin: 0 0 20px 0; /* Add spacing below */
+        }
+
+        .about-text p {
+            font-size: 20px;
+            line-height: 1.6;
+            background: rgba(0, 0, 0, 0.5); /* Add transparency to text background */
+            padding: 15px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Travel Explorer</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="">About Us</a>
+            <a href="explore.html">Explore</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <!-- About Us Content -->
+    <div class="about-container">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>
+                Welcome to Travel Explorer, your gateway to unforgettable journeys! 
+                We are passionate about crafting personalized travel experiences that 
+                inspire and rejuvenate. Whether you're seeking serene beaches, majestic mountains, 
+                or vibrant cities, we ensure every detail of your trip is handled with care.
+            </p>
+            <p>
+                Join us as we explore beyond boundaries and create memories that last a lifetime. 
+                Let Travel Explorer be your trusted companion in your quest to discover the world.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
