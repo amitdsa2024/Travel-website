@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Explorer</title>
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('1_kS9ZAfNoWeJoK7zuq2o5Kw.jpg') no-repeat fixed center;
+            background-size: cover;
+            color: white;
+        }
+
+        /* Navigation Bar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Contact Section Styling */
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+            margin-top: 60px; /* Offset for the navbar */
+            padding: 20px;
+        }
+
+        .contact-container h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            background: rgba(2, 129, 116, 0.8); /* Greenish overlay */
+            padding: 15px 30px;
+            border-radius: 10px;
+        }
+
+        .contact-container p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9); /* White form background with slight transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #028174;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #026653;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Travel Explorer</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="explore.html">Explore</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Please fill out the form below to get in touch.</p>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
