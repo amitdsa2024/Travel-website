@@ -14,6 +14,25 @@
             color: #333;
         }
 
+        nav {
+            background-color: #4CAF50;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            float: left;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
         .form-container {
             width: 100%;
             max-width: 400px;
@@ -67,16 +86,19 @@
         .form-container p a:hover {
             text-decoration: underline;
         }
-    .auto-style1 {
-	text-align: left;
-}
     </style>
 </head>
 
 <body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="/services">Services</a>
+        <a href="contact_us__travel_explorer.html">Contact Us</a>
+    </nav>
+    
     <div class="form-container">
-        <h2 class="auto-style1">&nbsp;</h2>
-		<h2>Sign Up</h2>
+        <h2>Sign Up</h2>
         <form action="/signup" method="POST">
             <input type="text" name="fullname" placeholder="Full Name" required />
             <input type="email" name="email" placeholder="Email Address" required />
